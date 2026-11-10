@@ -1,0 +1,12 @@
+CREATE TABLE store(
+    id BIGSERIAL PRIMARY KEY,
+    external_id VARCHAR(50) NOT NULL UNIQUE,
+    name VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE game (
+  id BIGSERIAL PRIMARY KEY,
+  external_id VARCHAR(50) NOT NULL UNIQUE,
+  title VARCHAR(255) NOT NULL,
+  thumbnail_url VARCHAR(500)
+);
